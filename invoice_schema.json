@@ -6,58 +6,25 @@
     "primaryInformation": {
       "type": "object",
       "properties": {
-        "jobName":        { "type": "string" },
-        "customer":      { "type": "string" },
-        "status":        { "type": "string" },
-        "region":        { "type": "string" },
-        "bidDate":       { "type": "string", "format": "date" },
-        "expectedCloseDate": { "type": "string", "format": "date" },
-        "dateProductNeeded": { "type": "string", "format": "date" },
+        "jobName":              { "type": "string" },
+        "customer":             { "type": "string" },
+        "bidDate":              { "type": "string", "format": "date" },
+        "expectedCloseDate":    { "type": "string", "format": "date" },
+        "dateProductNeeded":    { "type": "string", "format": "date" },
         "openingDateOfProject": { "type": "string", "format": "date" },
-        "winLossReason": { "type": "string" },
-        "holdReason":    { "type": "string" },
-        "poNumber":      { "type": "string" },
-        "specialLedBinPAM": { "type": "boolean" },
-        "materialDrivePlan": { "type": "string" },
-        "description":   { "type": "string" },
-        "checkboxes": {
-          "type": "object",
-          "properties": {
-            "cmpoCreated":                 { "type": "boolean" },
-            "duplicateOpportunity":       { "type": "boolean" },
-            "testTransaction":            { "type": "boolean" },
-            "vatRegistrationNumber":      { "type": "string" },
-            "eoriNumber":                 { "type": "string" },
-            "lumiumOrderStatus":          { "type": "string" },
-            "poReceived":                 { "type": "boolean" },
-            "custDrawingsAttachedInNS":   { "type": "boolean" },
-            "intDrawingsAttachedInNS":    { "type": "boolean" },
-            "sdSentForCustApproval":      { "type": "boolean" },
-            "excelBomAttachedInNS":       { "type": "boolean" },
-            "sdApprovedReceivedFromCust": { "type": "boolean" },
-            "nsAssemblyItemCreated":      { "type": "boolean" },
-            "customerCommitDateEmailSent":{ "type": "boolean" },
-            "exceptionReversed":          { "type": "boolean" },
-            "rfiReceived":                { "type": "boolean" },
-            "skipDEF":                    { "type": "boolean" },
-            "kecCustomDrawingRequest":    { "type": "boolean" },
-            "lumiumProject":              { "type": "boolean" },
-            "lumium2Project":             { "type": "boolean" },
-            "lumium2Promotion":           { "type": "boolean" },
-            "soraaProject":               { "type": "boolean" },
-            "customProject":              { "type": "boolean" }
-          }
-        }
+        "holdReason":           { "type": "string" },
+        "poNumber":             { "type": "string" },
+        "specialLedBinPAM":     { "type": "boolean" },
+        "materialDrivePlan":    { "type": "string" },
+        "description":          { "type": "string" }
       },
       "required": ["customer"]
     },
     "classification": {
       "type": "object",
       "properties": {
-        "subsidiary":            { "type": "string" },
         "marketSegment":         { "type": "string" },
         "specifier":             { "type": "string" },
-        "specifierNotOnList":    { "type": "string" },
         "contractor":            { "type": "string" },
         "salesChannel":          { "type": "string" },
         "preparedBy":            { "type": "string" },
@@ -92,22 +59,11 @@
           "items": {
             "type": "object",
             "properties": {
-              "lineNumber":           { "type": "integer" },
-              "itemNaedSearch":       { "type": "string" },
-              "naedSelection":        { "type": "string" },
-              "quantity":             { "type": "number" },
-              "itemDescription":      { "type": "string" },
-              "lineDescription":      { "type": "string" },
-              "priceLevel":           { "type": "string" },
-              "rate":                 { "type": "number" },
-              "amount":               { "type": "number" },
-              "dn1BaseCommissionEaPct": { "type": "number" },
-              "subDn1CommissionPct":    { "type": "number" },
-              "overageCommissionPct":   { "type": "number" },
-              "commissionDollar":       { "type": "number" },
-              "totalCommissionPerLine": { "type": "number" },
-              "ex":                   { "type": "boolean" },
-              "sh":                   { "type": "boolean" }
+              "item":            { "type": "string" },
+              "quantity":        { "type": "number" },
+              "lineDescription": { "type": "string" },
+              "rate":            { "type": "number" },
+              "amount":          { "type": "number" }
             }
           }
         }
