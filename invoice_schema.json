@@ -7,6 +7,10 @@
       "type": "string",
       "description": "The unique purchase order identifier"
     },
+    "entity_name": {
+      "type": "string",
+      "description": "Name of the person or business placing the purchase order"
+    },
     "date": {
       "type": "string",
       "format": "date",
@@ -39,5 +43,5 @@
       }
     }
   },
-  "required": ["po_number", "date", "total", "line_items"]
+  "required": ["po_number", "entity_name", "date", "total", "line_items"]
 }
